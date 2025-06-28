@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Interactive Knowledge Challenge</h1>
+      <img 
+        src="https://placehold.co/800x300?text=Welcome+to+the+Quiz!"
+        alt="Colorful quiz banner with various subjects floating around in a vibrant abstract design"
+        class="quiz-image"
+      />
+    </header>
+
+    <div class="quiz-container" id="quiz">
+      <!-- Quiz content will be injected here via JavaScript -->
+    </div>
+  </div>
+
+  <!-- Confetti (optional if added in JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Visual feedback image links -->
+  <script>
+    const feedbackImages = {
+      correct: "https://cdn-icons-png.flaticon.com/512/845/845646.png",
+      incorrect: "https://cdn-icons-png.flaticon.com/512/753/753345.png",
+      timeup: "https://cdn-icons-png.flaticon.com/512/595/595067.png"
+    };
+  </script>
+
+  <!-- Your main JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
